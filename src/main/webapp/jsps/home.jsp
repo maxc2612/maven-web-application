@@ -13,7 +13,6 @@
 <h1 align="center">We are developing and supporting quality Software Solutions to millions of clients globally.
 	           We are raising millionaires and billionaires IT professionals in over 50 nations.
 	We offer Training for DevOps with Linux, Kubernetes and Cloud, equipping IT Engineers for best performance.
-        By God's grace 
 	Class34 DevOps MasterClass will start on Oct 14, 2024. </h1>
 <hr>
 <br>
