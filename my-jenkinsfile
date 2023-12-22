@@ -1,0 +1,49 @@
+pipeline{
+    agent any
+    tools {
+        maven 'maven3.9.5'
+    }
+    stages{
+        stage('clonecode'){
+            steps{
+                sh "echo 'clonecode'"
+                git "https://github.com/Atangoinfotech/maven-web-application.git"
+            }
+        }
+        stage('build'){
+            steps{
+                sh "echo 'build code'"
+                sh "mvn package"
+            }
+        }
+        stage('codequality'){
+            steps{
+                sh "echo 'running codequality analysis'"
+                sh "mvn sonar:sonar"
+            }
+        }
+        stage('uploadArtifacts'){
+            steps{
+                sh "echo 'uploading Artifacts'"
+                sh "mvn deploy"
+            }
+        }
+        stage('deploymentUAT'){
+            steps{
+               deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://44.201.82.255:8080/')], contextPath: null, war: 'target/*.war'
+            }
+        }
+        stage('reviewcode'){
+            steps{
+                timeout(time:600, unit:'MINUTES'){
+                    input message: 'review and approve app deployment'
+                }
+            }
+        }
+        stage('deploy2prod'){
+            steps{
+                deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://44.201.82.255:8080/')], contextPath: null, war: 'target/*.war'
+            }
+        }
+    }
+}
