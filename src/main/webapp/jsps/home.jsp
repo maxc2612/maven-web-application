@@ -37,10 +37,10 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	<span style="font-weight: bold;">
                 Atango Infortech, 
 		Yaounde, Cameroon
-		+1 437 215 2483,
-		mylandmarktech@gmail.com
+		+237 652177151,
+		ndecalamba@gmail.com
 		<br>
-		<a href="mailto:mylandmarktech@gmail.com">Mail to Landmark Technologies</a>
+		<a href="mailto:ndecalamba@gmail.com">Mail to Atango Infotech</a>
 	</span>
 </div>
 <hr>
