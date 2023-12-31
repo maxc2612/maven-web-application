@@ -36,7 +36,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	</span>
 	<span style="font-weight: bold;">
                 Atango Infortech, 
-		Toronto, Canada
+		Yaounde, Cameroon
 		+1 437 215 2483,
 		mylandmarktech@gmail.com
 		<br>
