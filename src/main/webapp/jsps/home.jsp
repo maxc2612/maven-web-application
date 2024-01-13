@@ -35,7 +35,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 		<img src="images/mylandmarklogo.png" alt="" width="150">
 	</span>
 	<span style="font-weight: bold;">
-                Atango Infortech, 
+                Atango Infotech, 
 		Yaounde, Cameroon
 		+237 652177151,
 		ndecalamba@gmail.com
