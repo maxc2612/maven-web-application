@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>LandmarkTechnologies- Home Page</title>
+<title>INTL-Technologies- Home Page</title>
 <link href="images/mylandmarklogo.png" rel="icon">
 </head>
 </head>
@@ -32,7 +32,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mylandmarklogo.png" alt="" width="000">
+		<img src="images/INTLlogo.png" alt="" width="000">
 	</span>
 	<span style="font-weight: bold;">
                 Atango Infotech, 
@@ -40,15 +40,15 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 		+237 652177151,
 		ndecalamba@gmail.com
 		<br>
-		<a href="mailto:ndecalamba@gmail.com">Mail to Atango Infotech</a>
+		<a href="mailto:ndecalamba@gmail.com">Mail to INTL Technologies</a>
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center> Landmark Technologies - Consultant, Training and Software Development</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mylandmarktech.com/">Landmark Technologies</a> </small></p>
+<p align=center> INTL Technologies - Consultant, Training and Software Development</p>
+<p align=center><small>Copyrights 2021 by <a href="http://intltech.com/">INTL Technologies</a> </small></p>
 
 </body>
 </html>
