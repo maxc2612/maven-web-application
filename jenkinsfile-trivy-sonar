@@ -15,7 +15,7 @@ pipelien {
     stage('CodeQA') {
       steps {
         withSonarQubeEvn('sonar-server') {
-          sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=maven-web-application -Dsonar.projectKey= <enter Pkey> Dsonar.java.binaries=. '''
+          sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=maven-web-application -Dsonar.projectKey= <enter Pkey> -Dsonar.java.binaries=. '''
         }
       }
     }
