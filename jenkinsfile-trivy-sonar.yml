@@ -1,0 +1,30 @@
+pipelien {
+  agent any
+  tools {
+    maven 'maven3.9.9'
+  }
+  environment {
+    SCANNER_HOME= tool 'sonar-scanner'
+  }
+  stages {
+    stage('file system scan') {
+      steps {
+        sh "trivy fs --format table -o trivy-fs-report.html ."
+      }
+    }
+    stage('CodeQA') {
+      steps {
+        withSonarQubeEvn('sonar-server') {
+          sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=maven-web-application -Dsonar.projectKey= <enter Pkey> Dsonar.java.binaries=. '''
+        }
+      }
+    }
+    stage('Quality Gate') {
+      steps {
+        script {
+          withForQualityGate abortPipeline: false, credentialsID: 'sonar-token'
+        }
+      }
+    }
+  }
+}
