@@ -13,8 +13,8 @@
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Landmark Technologies</name>
-		<url>http://landmarktechnologies.com/</url>
+		<name>INTL Technologies</name>
+		<url>http://intltechnologies.com/</url>
 	</organization>
 
 	<properties>
@@ -94,13 +94,13 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
+	      <name>INTL Technologies Releases Nexus Repository</name>
 	      <url>http://54.234.86.134:8081/repository/maven-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+	      <name>INTL Technologies Snapshot Nexus Repository </name>
 	      <url>http://54.234.86.134:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
 	    
