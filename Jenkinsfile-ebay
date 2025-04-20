@@ -1,7 +1,7 @@
 node {
   def mavenHome = tool name: 'maven3.8.2'
   stage('1-Clone') {
-    git credentialsId: 'GitHUB-CREDENTIALS', url: 'https://github.com/Landmark-Technologies/maven-web-application' 
+    git credentialsId: 'GitHUB-CREDENTIALS', url: 'https://github.com/AtangaEmma/maven-web-application' 
   }
   stage('2-mavenBuild') {
      sh "${mavenHome}/bin/mvn clean package"
@@ -22,7 +22,7 @@ node {
 
 Build from Ebay pipeline project.
 
-Landmark Tecxhnologies''', subject: 'Build status', to: 'developers'
+Solavise Technologies''', subject: 'Build status', to: 'developers'
   }
   stage('Approval'){
     timeout(time:8, unit: 'HOURS' ) {
