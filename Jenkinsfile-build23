@@ -2,10 +2,10 @@ node{
     def mavenHome = tool name: 'maven3.9.4'
     stage('1.CloneCode'){
         //Jenkins running on a Linux system  
-        //sh "git clone https://github.com/LandmakTechnology/maven-web-application"
-        git "https://github.com/LandmakTechnology/maven-web-application"
+        //sh "git clone https://github.com/AtangaEmma/maven-web-application"
+        git "https://github.com/AtangaEmma/maven-web-application"
         //Jenkins running on a windows system
-        //bat "git clone https://github.com/LandmakTechnology/maven-web-application"  
+        //bat "git clone https://github.com/AtangaEmma/maven-web-application"  
     }
     stage('2.mvnBuild'){
         sh "${mavenHome}/bin/mvn clean package"
@@ -50,7 +50,7 @@ node{
 The build and Deployment status for tesla-app follows.
 
 Regards,
-Landmark Technologies ''', recipientProviders: [buildUser(), contributor(), developers(), requestor()], subject: 'build and deployment status', to: 'mylandmarktech@gmail.com'
+    Solavise Technologies ''', recipientProviders: [buildUser(), contributor(), developers(), requestor()], subject: 'build and deployment status', to: 'mylandmarktech@gmail.com'
 
     }
 }
