@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: AtangaEmma/maven-web-app
+        image: solavisetech/testapp
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
